@@ -6,6 +6,7 @@ __pypackages__/
 # Archivos de entorno
 .env
 .env.*
+!.env.template
 alembic.ini
 
 # Archivos locales
