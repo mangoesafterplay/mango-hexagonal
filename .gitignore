@@ -1,0 +1,66 @@
+# Entornos virtuales
+venv/
+.Python
+__pypackages__/
+
+# Archivos de entorno
+.env
+.env.*
+alembic.ini
+
+# Archivos locales
+*.sqlite3
+*.db
+*.sql
+*.log
+logs/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Archivos temporales
+*.swp
+*.bak
+*.tmp
+
+# IDEs y editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Build & dist
+build/
+dist/
+*.egg-info/
+*.eggs/
+
+# Alembic cache
+alembic/versions/__pycache__/
+
+# Coverage & test
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Node modules
+node_modules/
+
+# Archivos de lock opcionales
+poetry.lock
+Pipfile.lock

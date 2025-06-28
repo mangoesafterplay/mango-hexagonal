@@ -1,0 +1,17 @@
+# FastAPI
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+
+# ORM + PostgreSQL (async)
+SQLAlchemy==2.0.30
+asyncpg==0.29.0
+
+# Validación y settings
+pydantic==2.11.4
+python-dotenv==1.0.1
+
+# Alembic para migraciones
+alembic==1.13.1
+
+# Seguridad
+bcrypt==4.1.2
