@@ -14,7 +14,7 @@ Este proyecto implementa una API REST para registrar, consultar y gestionar usua
 
 ---
 
-## Cómo iniciar el proyecto
+## 🛠 Cómo iniciar el proyecto
 
 1. **Clona el repositorio**
     ```bash
@@ -25,20 +25,25 @@ Este proyecto implementa una API REST para registrar, consultar y gestionar usua
 2. **Instala dependencias**
     ```bash
     python -m venv venv
-    source venv/bin/activate    #Para Linux
-    venv\Scripts\activate       #Para Windows
+    source venv/bin/activate    # Para Linux / Mac
+    venv\Scripts\activate       # Para Windows
     pip install -r requirements.txt
     ```
 
 3. **Configura el entorno**
-    - Copia el archivo `.env.example` a `.env` y coloca tus credenciales de base de datos.
+    - Copia el archivo `.env.template` a `.env`:
+      ```bash
+      cp .env.template .env   # Para Linux / Mac
+      copy .env.template .env # Para Windows CMD
+      ```
+    - Coloca tus credenciales de base de datos.
 
-4. **Ejecuta las migraciones**
+4. **Ejecuta las migraciones (usando la URL síncrona para Alembic)**
     ```bash
     alembic upgrade head
     ```
 
-5. **Levanta el servidor**
+5. **Levanta el servidor (usando la URL asíncrona para la app)**
     ```bash
     uvicorn main:app --reload
     ```
@@ -49,7 +54,7 @@ Este proyecto implementa una API REST para registrar, consultar y gestionar usua
 
 ---
 
-## 🛠 Roadmap / Futuras mejoras
+## Roadmap / Futuras mejoras
 
 - ✅ Autenticación con JWT.
 - ✅ Pruebas unitarias (pytest).

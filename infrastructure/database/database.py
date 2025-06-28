@@ -11,9 +11,9 @@ ssl_context = ssl.create_default_context()
 
 class Database:
     def __init__(self):
-        self.DATABASE_URL = os.getenv("DATABASE_URL")
+        self.DATABASE_URL = os.getenv("DATABASE_URL_ASYNC")
         if not self.DATABASE_URL:
-            raise ValueError("DATABASE_URL not found in .env")
+            raise ValueError("DATABASE_URL_ASYNC not found in .env")
 
         self.engine = create_async_engine(
             self.DATABASE_URL,
